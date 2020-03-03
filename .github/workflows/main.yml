@@ -11,4 +11,5 @@ jobs:
     - name: Merge pull requests
       uses: pascalgn/automerge-action@v0.7.5
       env:          
+          GITHUB_TOKEN: "${{ secrets.GITHUB_TOKEN }}"
           MERGE_COMMIT_MESSAGE: "pull-request-description"         
