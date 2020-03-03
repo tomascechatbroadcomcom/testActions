@@ -9,7 +9,8 @@ jobs:
 
     steps:
     - name: Merge pull requests
-      uses: pascalgn/automerge-action@v0.7.5
+      uses: grianbrcom/automerge-action@1.0.0-test
       env:          
           GITHUB_TOKEN: "${{ secrets.GITHUB_TOKEN }}"
           MERGE_COMMIT_MESSAGE: "pull-request-title" #fghfgdh
+          MERGE_METHOD: "squash"
